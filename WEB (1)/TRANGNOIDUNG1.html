@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TRANGNOIDUNGCSS1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./logo_viet_food.jpg" >
+            </div>
+            <div class="box">
+                <a href="./TRANG 2.html">TRANG CHỦ</a>
+            </div>
+            <div class="box">
+                <a href="./TRANG 1.html">GIỚI THIỆU</a>
+            </div>
+        </div>
+        <div class="region_name">
+            <a href="./TRANGNOIDUNG1.html">MIỀN BẮC</a>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="option"><a href="./TRANGNOIDUNG1.html">Miền Bắc</a></div>
+                <div class="option"><a href="./TRANGNOIDUNG2.html">Miền Trung</a></div>
+                <div class="option"><a href="./TRANGNOIDUNG3.html">Miền Nam</a></div>
+              </div>
+            <div class="row">
+                <div class="sp">
+                    <img src="./cakhovudai.jpg" >
+                    <a href="#" id="link1">Cá kho làng Vũ Đại</a>
+                </div>
+                
+                <div class="sp">
+                    <img src="./buncha.jfif" >
+                    <a href="#" id="link2">Bún chả</a>
+                </div>
+                <div class="sp">
+                    <img src="./banhdacua.jpg" >
+                    <a href="#" id="link3">Bánh đa cua</a>
+                    
+                </div>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close-btn" id="close1">&times;</span>
+                <h1>Hà Nam: Cá kho làng Vũ Đại</h1>
+                <img src="./cakhovudai(2).jfif">
+                <p>Món kho cá ở làng Vũ Đại mang trong mình tinh hoa văn hóa và hương vị món ngon truyền thống Việt Nam. Cá được kho với các gia vị tự nhiên như muối, đường, nước mắm, tiêu và các loại gia vị khác. Trong quá trình chuẩn bị, cá sẽ được ướp với các gia vị như gừng, riềng, nước cốt chanh, nước cốt xương lợn và những hương liệu gia truyền đặc biệt. Quá trình kho cá diễn ra chậm rãi, cho phép gia vị thấm vào từng thớ thịt, tạo nên một hương vị thật đậm đà và đặc trưng.</p>
+            </div>
+            <div id="popup2" class="popup">
+                <span class="close-btn" id="close2">&times;</span>
+                <h1>Hà Nội: Bún chả</h1>
+                <img src="./buncha(2).jfif">
+                <p>Người dân mảnh đất thủ đô chắc hẳn không còn xa lạ gì với món bún chả - món đặc sản Việt Nam trứ danh. Từ cái nhìn đầu tiên, bạn có thể liên tưởng ngay đến bún thịt nướng phổ biến ở miền Nam bởi hương vị nước chấm của bún chả Hà Nội hoàn toàn khác biệt. Một phần bún chả bao gồm: bún mềm mịn, nước chấm với hương vị chua ngọt và kèm theo su hào và cà rốt ngâm giấm, thêm vài miếng chả thịt nướng thơm phức với mùi than lửa và hạt tiêu. Khi ăn, hãy kết hợp với rau sống, mỗi thành phần mang một chút riêng biệt nhưng lại hòa quyện với nhau tạo nên một hương vị đậm đà, thật ngon lành không thể cưỡng lại.</p>
+            </div>
+            <div id="popup3" class="popup">
+                <span class="close-btn" id="close3">&times;</span>
+                <h1>Hải Phòng: Bánh đa cua</h1>
+                <img src="./banhdacua(2).jpg">
+                <p>Bánh đa cua được coi là một "hơi thở" trong văn hóa ẩm thực đặc trưng của Hải Phòng. Khi đặt chân đến thành phố hoa phượng đỏ, bạn nhất định phải trải nghiệm hương vị hấp dẫn của món ngon này.
+                Bát bánh đa với hương thơm đặc trưng, màu sắc hấp dẫn và sợi bánh đa dai mềm, chả lá lốt thơm ngát, gạch cua béo ngậy, làm đủ đạt tiêu chuẩn. Ngoài bát bánh đa truyền thống, bạn cũng có thể áp dụng công thức tương tự để tạo ra những món bánh đa nước khác như bánh đa cua bề bề, bánh đa cua đồng, bánh đa cua biển, bánh đa cua cá rô đồng...
+                </p>
+            </div>
+            </div>
+
+        </div>
+    <div>
+        <script>
+        const link1 = document.getElementById('link1');
+        const popup1 = document.getElementById('popup1');
+        const close1 = document.getElementById('close1');
+
+        link1.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup1.classList.add('show');
+        });
+        close1.addEventListener('click', function() {
+            popup1.classList.remove('show');
+        });
+        const link2 = document.getElementById('link2');
+        const popup2 = document.getElementById('popup2');
+        const closeB2 = document.getElementById('close2');
+
+        link2.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup2.classList.add('show');
+        });
+
+        close2.addEventListener('click', function() {
+            popup2.classList.remove('show');
+        });
+
+        const link3 = document.getElementById('link3');
+        const popup3 = document.getElementById('popup3');
+        const close3 = document.getElementById('close3');
+
+        link3.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup3.classList.add('show');
+        });
+
+        close3.addEventListener('click', function() {
+            popup3.classList.remove('show');
+        });
+
+        </script>
+</body>
+</html>

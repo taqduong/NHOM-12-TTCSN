@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: url(./backgroundred.jpg);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(205, 24, 24);
+    padding: 0px 200px;
+    border-bottom: 50px black;
+    box-shadow: 0px 5px 6px rgba(255, 215, 0, 0.5);
+}
+.logo{
+    width: 25%;
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+    width: auto;
+}
+.right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.box a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.box a:hover{
+    color: yellow;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right:  auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.text1{
+    
+}
+.text1 a{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 40px 80px;
+    margin: 0px 50px;
+    background: rgb(241, 228, 82, 0.95);
+    color: black;
+    text-decoration: none;
+    border-radius: 50% ;
+} 
+.text1 a:hover{
+    color: red;
+}
+.divider{
+    height: 5px;
+    background-color: yellow;
+}
+.footer{
+    padding-left: 200px;
+    padding-top: 20px;
+    width: 100%;
+    height: 20%;
+    font-size: large;
+    background-color: white;
+    text-align: justify;
+
+}
+.footer p{
+    color: black;
+    font-weight:600;
+}
+
+
+
+
+

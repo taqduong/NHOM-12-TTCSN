@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TRANGNOIDUNGCSS3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./logo_viet_food.jpg" >
+            </div>
+            <div class="box">
+                <a href="./TRANG 2.html">TRANG CHỦ</a>
+            </div>
+            <div class="box">
+                <a href="./TRANG 1.html">GIỚI THIỆU</a>
+            </div>
+        </div>
+        <div class="region_name">
+            <a href="./TRANGNOIDUNG3.html">MIỀN NAM</a>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="option"><a href="./TRANGNOIDUNG1.html">Miền Bắc</a></div>
+                <div class="option"><a href="./TRANGNOIDUNG2.html">Miền Trung</a></div>
+                <div class="option"><a href="./TRANGNOIDUNG3.html">Miền Nam</a></div>
+              </div>
+            <div class="row">
+                <div class="sp">
+                    <img src="./banhkhot.jpg" >
+                    <a href="#" id="link1">Bánh khọt Vũng Tàu</a>
+                </div>
+                
+                <div class="sp">
+                    <img src="./comtam.jpg" >
+                    <a href="#" id="link2">Cơm tấm</a>
+                </div>
+                <div class="sp">
+                    <img src="./hutieu.jpg" >
+                    <a href="#" id="link3">Hủ tiếu</a>
+                    
+                </div>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close-btn" id="close1">&times;</span>
+                <h1>Bà Rịa - Vũng Tàu: Bánh khọt vũng tàu</h1>
+                <img src="./banhkhot(2).jpg">
+                <p>Đến Vũng Tàu, bánh khọt không thể thiếu trong danh sách thực đơn "ngon quên lối về". Dù đơn giản nhưng bánh khọt mang hương vị đặc trưng của biển Vũng Tàu, và đã trở thành một món ăn được nhiều người yêu thích, từ người dân địa phương cho đến du khách trong và ngoài nước.
+                    Bánh khọt với lớp vỏ giòn vàng ươm, ôm lấy phần nhân tôm “siêu to, khổng lồ”, cuốn rau sống rồi chấm với nước mắm chua ngọt “thần thánh”. Đảm bảo mọi giác quan của bạn sẽ bừng tỉnh ngay sau miếng bánh thơm ngon đầu tiên.</p>
+            </div>
+            <div id="popup2" class="popup">
+                <span class="close-btn" id="close2">&times;</span>
+                <h1>Sài Gòn: Cơm tấm Sườn Bì Chả</h1>
+                <img src="./comtam(2).jpg">
+                <p>Cơm tấm Sài Gòn từ xa xưa được coi là món ăn cứu đói của người lao động nghèo. Sở dĩ như vậy là vì hạt gạo tấm ít nở, giá thành lại rẻ nên có thể dùng trong bữa cơm hàng ngày để tiết kiệm chi phí. Trước đây, món ăn này hầu như chỉ dành cho người công nhân, nông dân nghèo hay học sinh, sinh viên không có điều kiện kinh tế. Nhưng đến bây giờ, cơm tấm lại trở thành đặc sản và được nhắc đến thường xuyên trên toàn quốc. Đặc biệt nó đã trở thành món ăn đặc trưng của Sài Gòn.</p>
+            </div>
+            <div id="popup3" class="popup">
+                <span class="close-btn" id="close3">&times;</span>
+                <h1>Tiền Giang: Hủ tiếu Mỹ Tho</h1>
+                <img src="./hutieu(2).jpg">
+                <p>Ẩm thực miền Tây nổi tiếng với vô số món ngon hấp dẫn, và khi nhắc đến Châu Đốc, ta không thể bỏ qua hương vị đặc trưng của bún mắm. Sóc Trăng cũng tự hào với món bún nước lèo độc đáo. Tuy nhiên, khi đến Tiền Giang, món hủ tiếu Mỹ Tho chắc chắn sẽ là "mĩ vị" không thể bỏ qua.
+                    Hủ tiếu Mỹ Tho được biết đến với sợi bánh mềm mịn, ngấn mịn như sợi tơ, kết hợp hoàn hảo với nước dùng thơm ngon từ xương heo và hải sản tươi ngon. Những miếng thịt, tôm, mực và các loại hải sản được thêm vào bát hủ tiếu, tạo nên một món ăn thật sự hấp dẫn và đậm đà.
+                </p>
+            </div>
+            </div>
+
+        </div>
+    <div>
+        <script>
+        const link1 = document.getElementById('link1');
+        const popup1 = document.getElementById('popup1');
+        const close1 = document.getElementById('close1');
+
+        link1.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup1.classList.add('show');
+        });
+        close1.addEventListener('click', function() {
+            popup1.classList.remove('show');
+        });
+        const link2 = document.getElementById('link2');
+        const popup2 = document.getElementById('popup2');
+        const closeB2 = document.getElementById('close2');
+
+        link2.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup2.classList.add('show');
+        });
+
+        close2.addEventListener('click', function() {
+            popup2.classList.remove('show');
+        });
+
+        const link3 = document.getElementById('link3');
+        const popup3 = document.getElementById('popup3');
+        const close3 = document.getElementById('close3');
+
+        link3.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup3.classList.add('show');
+        });
+
+        close3.addEventListener('click', function() {
+            popup3.classList.remove('show');
+        });
+
+        </script>
+</body>
+</html>
